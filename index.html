@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <form id="signup-form" class="signup-form" novalidate>
+      <h2>Create an Account</h2>
+
+      <!-- Username Field -->
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="johndoe" required>
+        <small class="error-message" id="username-error"></small>
+      </div>
+
+      <!-- Email Field -->
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+        <small class="error-message" id="email-error"></small>
+      </div>
+
+      <!-- Country & Postal Code Row -->
+      <div class="form-row">
+        <!-- Country Field -->
+        <div class="form-group">
+          <label for="country">Country</label>
+          <select id="country" name="country" required>
+            <option value="" disabled selected>Select country</option>
+            <option value="CA">Canada</option>
+            <option value="US">United States</option>
+            <option value="NP">Nepal</option>
+            <option value="IN">India</option>
+            <option value="UK">United Kingdom</option>
+          </select>
+          <small class="error-message" id="country-error"></small>
+        </div>
+
+        <!-- Postal Code Field -->
+        <div class="form-group">
+          <label for="postal-code" id="postal-label">Postal / ZIP Code</label>
+          <input type="text" id="postal-code" name="postal-code" placeholder="e.g. M5V 2T6" required>
+          <small class="error-message" id="postal-code-error"></small>
+        </div>
+      </div>
+
+      <!-- Password Field -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="At least 8 characters" required>
+        <small class="error-message" id="password-error"></small>
+      </div>
+
+      <!-- Confirm Password Field -->
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter password" required>
+        <small class="error-message" id="confirm-password-error"></small>
+      </div>
+
+      <button type="submit" id="submit-btn">Sign Up</button>
+    </form>
+  </main>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>
